@@ -1,0 +1,18 @@
+/* Autumn Theme */
+body[data-theme="autumn"] {
+    --background-color: linear-gradient(135deg, #ffedd5, #ffe5c1);
+    --text-color: #4a2d2a;
+    --primary-color: linear-gradient(90deg, #e07a5f, #9b4333);
+    --primary-hover-color: linear-gradient(90deg, #9b4333, #e07a5f);
+    --secondary-color: linear-gradient(135deg, #d3a593, #b97c6b);
+    --light-color: #ffe5d1;
+    --dark-color: #9c5e48;
+    --shadow-color: rgba(255, 237, 213, 0.4);
+}
+.theme-autumn {
+    background-color: #e07a5f;
+    color: #4a2d2a;
+}
+.theme-autumn:hover {
+    background-color: #9b4333;
+}
