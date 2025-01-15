@@ -1,0 +1,18 @@
+/* Monochrome Theme */
+body[data-theme="monochrome"] {
+    --background-color: linear-gradient(135deg, #f0f0f0, #e6e6e6);
+    --text-color: #333;
+    --primary-color: linear-gradient(90deg, #777, #555);
+    --primary-hover-color: linear-gradient(90deg, #555, #777);
+    --secondary-color: linear-gradient(135deg, #aaa, #888);
+    --light-color: #e6e6e6;
+    --dark-color: #666;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+}
+.theme-monochrome {
+    background-color: #888888;
+    color: #ffffff;
+}
+.theme-monochrome:hover {
+    background-color: #666666;
+}
