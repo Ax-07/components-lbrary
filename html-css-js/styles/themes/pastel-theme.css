@@ -1,0 +1,18 @@
+/* Pastel Theme */
+body[data-theme="pastel"] {
+    --background-color: linear-gradient(135deg, #f8ede3, #e0d5c6);
+    --text-color: #6a0572;
+    --primary-color: linear-gradient(90deg, #9a94bc, #7169a5);
+    --primary-hover-color: linear-gradient(90deg, #7169a5, #9a94bc);
+    --secondary-color: linear-gradient(135deg, #e0d5c6, #f0e8e8);
+    --light-color: #f0e8e8;
+    --dark-color: #9a8b8b;
+    --shadow-color: rgba(248, 237, 227, 0.4);
+}
+.theme-pastel {
+    background-color: #9a94bc;
+    color: #6a0572;
+}
+.theme-pastel:hover {
+    background-color: #7169a5;
+}
