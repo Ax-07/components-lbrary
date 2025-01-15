@@ -1,0 +1,18 @@
+/* Spring Theme */
+body[data-theme="spring"] {
+    --background-color: linear-gradient(135deg, #f6f9d4, #e8f5e9);
+    --text-color: #6d4c41;
+    --primary-color: linear-gradient(90deg, #81c784, #4caf50);
+    --primary-hover-color: linear-gradient(90deg, #4caf50, #81c784);
+    --secondary-color: linear-gradient(135deg, #a5d6a7, #81c784);
+    --light-color: #e8f5e9;
+    --dark-color: #388e3c;
+    --shadow-color: rgba(129, 199, 132, 0.4);
+}
+.theme-spring {
+    background-color: #81c784;
+    color: #6d4c41;
+}
+.theme-spring:hover {
+    background-color: #4caf50;
+}
