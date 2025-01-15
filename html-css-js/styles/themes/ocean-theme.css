@@ -1,0 +1,18 @@
+/* Ocean Theme */
+body[data-theme="ocean"] {
+    --background-color: linear-gradient(135deg, #1a535c, #4c9a91);
+    --text-color: #f7fff7;
+    --primary-color: linear-gradient(90deg, #4ecdc4, #379e9a);
+    --primary-hover-color: linear-gradient(90deg, #379e9a, #4ecdc4);
+    --secondary-color: linear-gradient(135deg, #4c9a91, #88d0c1);
+    --light-color: #88d0c1;
+    --dark-color: #0d3a41;
+    --shadow-color: rgba(26, 83, 92, 0.4);
+}
+.theme-ocean {
+    background-color: #4ecdc4;
+    color: #1a535c;
+}
+.theme-ocean:hover {
+    background-color: #379e9a;
+}
