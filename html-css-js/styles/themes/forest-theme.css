@@ -1,0 +1,18 @@
+/* Forest Theme */
+body[data-theme="forest"] {
+    --background-color: linear-gradient(135deg, #2b580c, #4a7c24);
+    --text-color: #dfffd6;
+    --primary-color: linear-gradient(90deg, #588157, #3a5a40);
+    --primary-hover-color: linear-gradient(90deg, #3a5a40, #588157);
+    --secondary-color: linear-gradient(135deg, #4a7c24, #6e9e5b);
+    --light-color: #6e9e5b;
+    --dark-color: #1a3813;
+    --shadow-color: rgba(43, 88, 12, 0.4);
+}
+.theme-forest {
+    background-color: #588157;
+    color: #dfffd6;
+}
+.theme-forest:hover {
+    background-color: #3a5a40;
+}
