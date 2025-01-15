@@ -1,0 +1,18 @@
+/* Solarized Theme */
+body[data-theme="solarized"] {
+    --background-color: linear-gradient(135deg, #002b36, #073642);
+    --text-color: #839496;
+    --primary-color: linear-gradient(90deg, #268bd2, #006d9c);
+    --primary-hover-color: linear-gradient(90deg, #006d9c, #268bd2);
+    --secondary-color: linear-gradient(135deg, #073642, #586e75);
+    --light-color: #586e75;
+    --dark-color: #001f27;
+    --shadow-color: rgba(0, 43, 54, 0.5);
+}
+.theme-solarized {
+    background-color: #268bd2;
+    color: #fdf6e3;
+}
+.theme-solarized:hover {
+    background-color: #006d9c;
+}
