@@ -1,0 +1,18 @@
+/* Vibrant Theme */
+body[data-theme="vibrant"] {
+    --background-color: linear-gradient(135deg, #ffeaa7, #fab1a0);
+    --text-color: #2d3436;
+    --primary-color: linear-gradient(90deg, #fd79a8, #d63031);
+    --primary-hover-color: linear-gradient(90deg, #d63031, #fd79a8);
+    --secondary-color: linear-gradient(135deg, #fab1a0, #ffeaa7);
+    --light-color: #ffeaa7;
+    --dark-color: #d63031;
+    --shadow-color: rgba(46, 204, 113, 0.5);
+}
+.theme-vibrant {
+    background-color: #fd79a8;
+    color: #2d3436;
+}
+.theme-vibrant:hover {
+    background-color: #d63031;
+}
