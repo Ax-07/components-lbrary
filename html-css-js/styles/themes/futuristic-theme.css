@@ -1,0 +1,18 @@
+/* Futuristic Theme */
+body[data-theme="futuristic"] {
+    --background-color: linear-gradient(135deg, #121212, #1a1a1a);
+    --text-color: #00ffcc;
+    --primary-color: linear-gradient(90deg, #1f1f1f, #00aaff);
+    --primary-hover-color: linear-gradient(90deg, #00aaff, #1f1f1f);
+    --secondary-color: linear-gradient(135deg, #00ffcc, #00e6b8);
+    --light-color: #00e6b8;
+    --dark-color: #0d0d0d;
+    --shadow-color: rgba(0, 255, 204, 0.4);
+}
+.theme-futuristic {
+    background-color: #121212;
+    color: #00ffcc;
+}
+.theme-futuristic:hover {
+    background-color: #00aaff;
+}
