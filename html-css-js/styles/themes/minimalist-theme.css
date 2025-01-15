@@ -1,0 +1,18 @@
+/* Minimalist Theme */
+body[data-theme="minimalist"] {
+    --background-color: linear-gradient(135deg, #ffffff, #f9f9f9);
+    --text-color: #000000;
+    --primary-color: linear-gradient(90deg, #cccccc, #aaaaaa);
+    --primary-hover-color: linear-gradient(90deg, #aaaaaa, #cccccc);
+    --secondary-color: linear-gradient(135deg, #dddddd, #cccccc);
+    --light-color: #eeeeee;
+    --dark-color: #bbbbbb;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+.theme-minimalist {
+    background-color: #ffffff;
+    color: #000000;
+}
+.theme-minimalist:hover {
+    background-color: #aaaaaa;
+}
