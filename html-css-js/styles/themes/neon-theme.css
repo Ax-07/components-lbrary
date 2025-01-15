@@ -1,0 +1,18 @@
+/* Neon Theme */
+body[data-theme="neon"] {
+    --background-color: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+    --text-color: #faff00;
+    --primary-color: linear-gradient(90deg, #ff00ff, #cc00cc);
+    --primary-hover-color: linear-gradient(90deg, #cc00cc, #ff00ff);
+    --secondary-color: linear-gradient(135deg, #00ffff, #2effff);
+    --light-color: #2effff;
+    --dark-color: #0c0c0c;
+    --shadow-color: rgba(255, 0, 255, 0.3);
+}
+.theme-neon {
+    background-color: #ff00ff;
+    color: #0f0f0f;
+}
+.theme-neon:hover {
+    background-color: #cc00cc;
+}
