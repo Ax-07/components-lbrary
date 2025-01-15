@@ -1,0 +1,19 @@
+/* Dark Theme */
+body[data-theme="dark"] {
+    --background-color: linear-gradient(135deg, #121212, #1f1f1f);
+    --text-color: #f8f9fa;
+    --text-secondary-color: #3700b3;
+    --primary-color: linear-gradient(90deg, #bb86fc, #3700b3);
+    --primary-hover-color: linear-gradient(90deg, #3700b3, #bb86fc);
+    --secondary-color: linear-gradient(135deg, #444444, #2c2c2c);
+    --light-color: #2c2c2c;
+    --dark-color: #000000;
+    --shadow-color: rgba(0, 0, 0, 0.5);
+}
+.theme-dark {
+    background: #343a40;
+    color: #f8f9fa;
+}
+.theme-dark:hover {
+    background-color: #23272b;
+}

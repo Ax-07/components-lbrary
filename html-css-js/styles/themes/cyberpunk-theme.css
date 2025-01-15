@@ -1,0 +1,18 @@
+/* Cyberpunk Theme */
+body[data-theme="cyberpunk"] {
+    --background-color: linear-gradient(135deg, #101020, #181830);
+    --text-color: #f0f0f0;
+    --primary-color: linear-gradient(90deg, #ff007f, #d40066);
+    --primary-hover-color: linear-gradient(90deg, #d40066, #ff007f);
+    --secondary-color: linear-gradient(135deg, #00ffff, #00ccff);
+    --light-color: #2effff;
+    --dark-color: #000000;
+    --shadow-color: rgba(255, 0, 127, 0.5);
+}
+.theme-cyberpunk {
+    background-color: #ff007f;
+    color: #101020;
+}
+.theme-cyberpunk:hover {
+    background-color: #d40066;
+}
