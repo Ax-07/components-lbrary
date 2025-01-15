@@ -1,0 +1,18 @@
+/* Midnight Theme */
+body[data-theme="midnight"] {
+    --background-color: linear-gradient(135deg, #0b3d91, #1e90ff);
+    --text-color: #e6f7ff;
+    --primary-color: linear-gradient(90deg, #1e90ff, #0056b3);
+    --primary-hover-color: linear-gradient(90deg, #0056b3, #1e90ff);
+    --secondary-color: linear-gradient(135deg, #4a69bd, #3c50a6);
+    --light-color: #68a0db;
+    --dark-color: #002766;
+    --shadow-color: rgba(11, 61, 145, 0.4);
+}
+.theme-midnight {
+    background-color: #1e90ff;
+    color: #e6f7ff;
+}
+.theme-midnight:hover {
+    background-color: #0056b3;
+}
