@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My library</title>
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+
+<body>
+    <nav class="sidenav">
+        <div class="accordion">
+            <!-- Components -->
+            <div class="accordion-item">
+                <button class="accordion-header"><a href="components-page.html">Composants</a></button>
+                <div class="accordion-body">
+                    <ul>
+                        <li><a href="components-page.html#accordion">Accordion</a></li>
+                        <li><a href="components-page.html#alerts">Alerts</a></li>
+                        <li><a href="components-page.html#avatar">Avatar</a></li>
+                        <li><a href="components-page.html#badge">Badge</a></li>
+                        <li><a href="components-page.html#buttons">Buttons</a></li>
+                        <li><a href="components-page.html#card-deck">Cards Deck</a></li>
+                        <li><a href="components-page.html#context-menus">Context Menus</a></li>
+                        <li><a href="components-page.html#date-picker">Date Picker</a></li>
+                        <li><a href="components-page.html#dropdowns">Dropdowns</a></li>
+                        <li><a href="components-page.html#location-maps">Location Maps</a></li>
+                        <li><a href="components-page.html#notifications">Notifications</a></li>
+                        <li><a href="components-page.html#popover">Popover</a></li>
+                        <li><a href="components-page.html#progress-bar">Progress Bar</a></li>
+                        <li><a href="components-page.html#search-bar">Search Bar</a></li>
+                        <li><a href="components-page.html#tables">Tables</a></li>
+                        <li><a href="components-page.html#tabs">Tabs</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Sections -->
+            <div class="accordion-item">
+                <button class="accordion-header"><a href="sections-page.html">Sections</a></button>
+                <div class="accordion-body">
+                    <ul>
+                        <li><a href="sections-page.html#about">About Section</a></li>
+                        <li><a href="sections-page.html#banner">Banner</a></li>
+                        <li><a href="sections-page.html#carousel">Carousel</a></li>
+                        <li><a href="sections-page.html#feature">Feature</a></li>
+                        <li><a href="sections-page.html#forms">Forms</a></li>
+                        <li><a href="sections-page.html#hero">Hero Section</a></li>
+                        <li><a href="sections-page.html#image-galleries">Image Galleries</a></li>
+                        <li><a href="sections-page.html#media-gallery">Media Gallery</a></li>
+                        <li><a href="sections-page.html#media-object">Media Object</a></li>
+                        <li><a href="sections-page.html#modal">Modal</a></li>
+                        <li><a href="sections-page.html#pricing">Pricing</a></li>
+                        <li><a href="sections-page.html#profile-cards">Profile Cards</a></li>
+                        <li><a href="sections-page.html#testimonials">Testimonials</a></li>
+                        <li><a href="sections-page.html#video-testimonials">Video Testimonials</a></li>
+                        <li><a href="sections-page.html#thumbnail">Thumbnail</a></li>
+                        <li><a href="sections-page.html#timeline">Timeline</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Layouts -->
+            <div class="accordion-item">
+                <button class="accordion-header"><a href="layouts-page.html">Layouts</a></button>
+                <div class="accordion-body">
+                    <ul>
+                        <li><a href="layouts-page.html#cardBasedLayout">Card-Based Layout</a></li>
+                        <li><a href="layouts-page.html#dashboardLayout">Dashboard Layout</a></li>
+                        <li><a href="layouts-page.html#flexBoxLayout">Flexbox Layout</a></li>
+                        <li><a href="layouts-page.html#footer">Footer Layout</a></li>
+                        <li><a href="layouts-page.html#fullScreenHeroLayout">Full-Screen Hero Layout</a></li>
+                        <li><a href="layouts-page.html#gridLayout">Grid Layout</a></li>
+                        <li><a href="layouts-page.html#header">Header Layout</a></li>
+                        <li><a href="layouts-page.html#masonryLayout">Masonry</a></li>
+                        <li><a href="layouts-page.html#multiColumnsLayout">Multi Column</a></li>
+                        <li><a href="layouts-page.html#overlayLayout">Overlay Layout</a></li>
+                        <li><a href="layouts-page.html#parallaxLayout">Parallax Layout</a></li>
+                        <li><a href="layouts-page.html#responsiveLayout">Responsive Layout</a></li>
+                        <li><a href="layouts-page.html#sidebar">Sidebar Layout</a></li>
+                        <li><a href="layouts-page.html#singleColumnLayout">Single Column</a></li>
+                        <li><a href="layouts-page.html#splitScreenLayout">Split-Screen Layout</a></li>
+                        <li><a href="layouts-page.html#stickyLayout">Sticky Layout</a></li>
+                        <li><a href="layouts-page.html#zigzagLayout">Zig Zag Layout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main">
+        <header class="header">
+            <h1>Exemple de Composants - Optimisation des Images</h1>
+            <div class="theme-switcher">
+                <button class="btn theme-light" onclick="changeTheme('light')">Light Mode</button>
+                <button class="btn theme-dark" onclick="changeTheme('dark')">Dark Mode</button>
+                <button class="btn theme-solarized" onclick="changeTheme('solarized')">Solarized</button>
+                <button class="btn theme-monochrome" onclick="changeTheme('monochrome')">Monochrome</button>
+                <button class="btn theme-vibrant" onclick="changeTheme('vibrant')">Vibrant</button>
+                <button class="btn theme-ocean" onclick="changeTheme('ocean')">Ocean</button>
+                <button class="btn theme-forest" onclick="changeTheme('forest')">Forest</button>
+                <button class="btn theme-sunset" onclick="changeTheme('sunset')">Sunset</button>
+                <button class="btn theme-midnight" onclick="changeTheme('midnight')">Midnight</button>
+                <button class="btn theme-pastel" onclick="changeTheme('pastel')">Pastel</button>
+                <button class="btn theme-neon" onclick="changeTheme('neon')">Neon</button>
+                <button class="btn theme-autumn" onclick="changeTheme('autumn')">Autumn</button>
+                <button class="btn theme-spring" onclick="changeTheme('spring')">Spring</button>
+                <button class="btn theme-retro" onclick="changeTheme('retro')">Retro</button>
+                <button class="btn theme-cyberpunk" onclick="changeTheme('cyberpunk')">Cyberpunk</button>
+                <button class="btn theme-minimalist" onclick="changeTheme('minimalist')">Minimalist</button>
+                <button class="btn theme-futuristic" onclick="changeTheme('futuristic')">Futuristic</button>
+            </div>
+        </header>
+
+        <section id="layout">
+            
+            <section id="cardBasedLayout" class="section">
+                <h2>Card-Based Layout</h2>
+                <p class="description">Le layout "Card-Based" organise les contenus sous forme de cartes, idéal pour
+                    présenter des informations concises et visuelles.</p>
+                <div class="card-layout">
+                    <div class="card">Carte 1</div>
+                    <div class="card">Carte 2</div>
+                    <div class="card">Carte 3</div>
+                    <div class="card">Carte 4</div>
+                </div>
+            </section>
+            
+            <section id="dashboardLayout" class="section">
+                <h2>Dashboard Layout</h2>
+                <p class="description">Le layout "Dashboard" est utilisé pour organiser des informations clés comme des
+                    graphiques, des tableaux et des widgets.</p>
+                <div class="dashboard-container">
+                    <div class="widget">Widget 1</div>
+                    <div class="widget">Widget 2</div>
+                    <div class="widget">Widget 3</div>
+                    <div class="widget">Widget 4</div>
+                </div>
+            </section>
+            
+            <section id="flexBoxLayout" class="section">
+                <h2>Flexbox Layout</h2>
+                <p class="description">Le layout "Flexbox" utilise des conteneurs flexibles pour aligner et distribuer
+                    les éléments dans un espace défini, offrant une grande flexibilité.</p>
+                <section id="flexbox-layout" class="flexbox-layout">
+                    <div class="flex-item">Item 1</div>
+                    <div class="flex-item">Item 2</div>
+                    <div class="flex-item">Item 3</div>
+                    <div class="flex-item">Item 4</div>
+                </section>
+            </section>
+
+            <section id="footer" class="section">
+                <h2>Footer</h2>
+                <p class="description">Le layout "Footer" est placé en bas de la page et contient souvent des
+                    informations légales, des liens rapides et des coordonnées.</p>
+                <footer id="footer-layout" class="footer-layout">
+                    <p>&copy; 2023 Your Company. All rights reserved.</p>
+                    <ul>
+                        <li><a href="#privacy-policy">Privacy Policy</a></li>
+                        <li><a href="#terms-of-service">Terms of Service</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </footer>
+            </section>
+
+            <section id="fullScreenHeroLayout" class="section">
+                <h2>Full-Screen Hero Layout</h2>
+                <p class="description">Le layout "Full-Screen Hero" occupe tout l'écran, parfait pour mettre en avant
+                    une image ou un message clé.</p>
+                <div class="full-screen-hero">
+                    <h1>Bienvenue</h1>
+                    <p>Découvrez nos solutions innovantes.</p>
+                    <button class="btn btn-primary">En savoir plus</button>
+                </div>
+            </section>
+            
+            <section id="gridLayout" class="section">
+                <h2>Grid Layout</h2>
+                <p class="description">Le layout "Grid" permet d'organiser le contenu sous forme de grille, idéal pour
+                    afficher des articles ou des produits en colonnes et rangées.</p>
+                <section id="grid-layout" class="grid-layout">
+                    <div class="grid-item">Item 1</div>
+                    <div class="grid-item">Item 2</div>
+                    <div class="grid-item">Item 3</div>
+                    <div class="grid-item">Item 4</div>
+                </section>
+            </section>
+
+            <section id="header" class="section">
+                <h2>Header</h2>
+                <p class="description">Le layout "Header" est utilisé pour afficher une barre de navigation en haut de
+                    la page, souvent avec le logo du site et des liens importants.</p>
+                <header id="header-layout" class="header-layout">
+                    <h1>Header Layout</h1>
+                    <nav>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            </section>
+
+            <section id="masonryLayout" class="section">
+                <h2>Masonry Layout</h2>
+                <p class="description">Le layout "Masonry" permet d'afficher des éléments de tailles variables dans un
+                    style imbriqué, souvent utilisé pour les galeries d'images.</p>
+                <section id="masonry-layout" class="masonry-layout">
+                    <div class="masonry-item">Masonry Item 1</div>
+                    <div class="masonry-item">Masonry Item 2</div>
+                    <div class="masonry-item">Masonry Item 3</div>
+                    <div class="masonry-item">Masonry Item 4</div>
+                </section>
+            </section>
+
+            <section id="multiColumnsLayout" class="section">
+                <h2>Multi Column Layout</h2>
+                <p class="description">Le layout "Multi Column" divise le contenu en plusieurs colonnes, utile pour
+                    afficher des sections parallèles ou des comparaisons.</p>
+                <section id="multi-column-layout" class="multi-column-layout">
+                    <div class="column-item">Column 1</div>
+                    <div class="column-item">Column 2</div>
+                    <div class="column-item">Column 3</div>
+                </section>
+            </section>
+
+            <section id="overlayLayout" class="section">
+                <h2>Overlay Layout</h2>
+                <p class="description">Le layout "Overlay" permet de superposer des éléments comme du texte sur une
+                    image pour un effet visuel attrayant.</p>
+                <div class="overlay-container">
+                    <img src="https://placehold.co/800x400" alt="Background Image">
+                    <div class="overlay-content">
+                        <h3>Texte superposé</h3>
+                        <p>Description courte ici.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="parallaxLayout" class="section">
+                <h2>Parallax Layout</h2>
+                <p class="description">Le layout "Parallax" crée un effet de profondeur en faisant défiler des images ou
+                    des arrière-plans à différentes vitesses.</p>
+                <section id="parallax-layout" class="parallax-layout">
+                    <div class="parallax-background"></div>
+                    <div class="parallax-content">
+                        <h2>Parallax Section</h2>
+                        <p>Le contenu de la section Parallax.</p>
+                    </div>
+                </section>
+            </section>
+            
+            <section id="responsiveLayout" class="section">
+                <h2>Responsive Layout</h2>
+                <p class="description">Le layout "Responsive" s'adapte à différentes tailles d'écran, garantissant une
+                    expérience utilisateur optimale sur tous les appareils.</p>
+                <section id="responsive-layout" class="responsive-layout">
+                    <div class="responsive-item">Responsive Item 1</div>
+                    <div class="responsive-item">Responsive Item 2</div>
+                    <div class="responsive-item">Responsive Item 3</div>
+                    <div class="responsive-item">Responsive Item 4</div>
+                </section>
+            </section>
+
+            <section id="sidebar" class="section">
+                <h2>Sidebar</h2>
+                <p class="description">Le layout "Sidebar" permet d'organiser le contenu en ajoutant une barre latérale
+                    pour des liens ou du contenu supplémentaire.</p>
+                <aside id="sidebar-layout" class="sidebar-layout">
+                    <ul>
+                        <li><a href="#link1">Link 1</a></li>
+                        <li><a href="#link2">Link 2</a></li>
+                        <li><a href="#link3">Link 3</a></li>
+                    </ul>
+                </aside>
+                <div id="sidebar-layout-content" class="sidebar-layout-content">
+                    <p>This is the content of the sidebar layout.</p>
+                </div>
+            </section>
+
+            <section id="singleColumnLayout" class="section">
+                <h2>Single Column Layout</h2>
+                <p class="description">Le layout "Single Column" affiche le contenu dans une seule colonne, idéal pour
+                    des articles ou des pages simples.</p>
+                <section id="single-column-layout" class="single-column-layout">
+                    <div class="column-item">Single Column Item</div>
+                </section>
+            </section>
+
+            <section id="splitScreenLayout" class="section">
+                <h2>Split Screen Layout</h2>
+                <p class="description">Le layout "Split Screen" divise l'écran en deux parties, idéal pour juxtaposer
+                    deux contenus différents.</p>
+                <div class="split-screen">
+                    <div class="split-left">Contenu gauche</div>
+                    <div class="split-right">Contenu droit</div>
+                </div>
+            </section>
+
+            <section id="stickyLayout" class="section">
+                <h2>Sticky Layout</h2>
+                <p class="description">Le layout "Sticky" permet de maintenir certains éléments, comme des barres
+                    latérales ou des menus, fixes lors du défilement.</p>
+                <div class="sticky-container">
+                    <aside class="sticky-sidebar">Sticky Sidebar</aside>
+                    <div class="sticky-content">
+                        <p>Contenu principal qui défile avec la page.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="zigzagLayout" class="section">
+                <h2>Zigzag Layout</h2>
+                <p class="description">Le layout "Zigzag" dispose les éléments de manière alternée pour un design
+                    dynamique.</p>
+                <div class="zigzag-container">
+                    <div class="zigzag-item">
+                        <img src="https://placehold.co/200" alt="Image">
+                        <div class="zigzag-text">Texte 1</div>
+                    </div>
+                    <div class="zigzag-item reverse">
+                        <img src="https://placehold.co/200" alt="Image">
+                        <div class="zigzag-text">Texte 2</div>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+        <footer id="footer" class="footer">
+            <p>&copy; 2023 Your Company. All rights reserved.</p>
+            <ul>
+                <li><a href="#privacy-policy">Privacy Policy</a></li>
+                <li><a href="#terms-of-service">Terms of Service</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </footer>
+    </main>
+
+    <script src="./js/theme-switcher.js"></script>
+    <script src="./js/carousel.js"></script>
+    <script src="./js/accordion.js"></script>
+    <script src="./js/tabs.js"></script>
+    <script src="./components/date-picker/date-picker.js"></script>
+</body>
+
+</html>
