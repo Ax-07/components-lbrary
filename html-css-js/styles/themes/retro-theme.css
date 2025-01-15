@@ -1,0 +1,18 @@
+/* Retro Theme */
+body[data-theme="retro"] {
+    --background-color: linear-gradient(135deg, #fce2c2, #ffcc80);
+    --text-color: #3e2723;
+    --primary-color: linear-gradient(90deg, #ffab40, #e65100);
+    --primary-hover-color: linear-gradient(90deg, #e65100, #ffab40);
+    --secondary-color: linear-gradient(135deg, #ffcc80, #ffe0b2);
+    --light-color: #ffe0b2;
+    --dark-color: #d84315;
+    --shadow-color: rgba(252, 226, 194, 0.4);
+}
+.theme-retro {
+    background-color: #ffab40;
+    color: #3e2723;
+}
+.theme-retro:hover {
+    background-color: #e65100;
+}
