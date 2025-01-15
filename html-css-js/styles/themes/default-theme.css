@@ -1,0 +1,21 @@
+/* Default Theme */
+:root {
+    --font-family: 'Arial', sans-serif;
+    --primary-color: #007bff;
+    --primary-hover-color: #0056b3;
+    --secondary-color: #6c757d;
+    --success-color: #28a745;
+    --success-hover-color: #218838;
+    --danger-color: #dc3545;
+    --danger-hover-color: #c82333;
+    --warning-color: #ffc107;
+    --warning-hover-color: #e0a800;
+    --info-color: #17a2b8;
+    --info-hover-color: #138496;
+    --background-color: #f8f9fa;
+    --text-color: #333;
+    --light-color: #e9ecef;
+    --dark-color: #343a40;
+    --white-color: #fff;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
