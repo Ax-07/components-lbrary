@@ -1,0 +1,45 @@
+/* Conteneur général du popover */
+.popover-container {
+  position: relative; /* Permet le positionnement absolu du contenu */
+  display: inline-block;
+  margin-bottom: 1.5em;
+}
+
+/* Élément déclencheur : l’image */
+.popover-trigger {
+  border-radius: 8px;
+  width: 150px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Effet au survol du déclencheur */
+.popover-trigger:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px var(--shadow-color);
+}
+
+/* Le contenu du popover, masqué par défaut */
+.popover-content {
+  position: absolute;
+  top: 100%;          /* Juste sous l’élément déclencheur */
+  left: 0;
+  z-index: 999;       /* Au-dessus des autres éléments */
+  transform: translateY(0.5em);
+  background: var(--background-color);
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px var(--shadow-color);
+  width: 200px;       /* Ajustez selon la place voulue */
+  opacity: 0;         /* Invisible tant que pas survolé */
+  pointer-events: none; /* Empêche les clics quand invisible */
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+/* Au survol du conteneur, on révèle le popover */
+.popover-container:hover .popover-content {
+  opacity: 1;
+  pointer-events: auto;  /* Devient cliquable si vous avez des liens à l’intérieur */
+  transform: translateY(0);
+}
