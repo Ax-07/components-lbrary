@@ -1,0 +1,197 @@
+<section id="dropdowns" class="section">
+    <h2>Dropdowns</h2>
+    <p class="description">
+      Les listes déroulantes avancées pour différents cas d'utilisation, y compris la recherche, les sous-menus et les options multi-colonnes.
+    </p>
+  
+    <!-- Single Select Dropdown -->
+    <div>
+      <h3>Single Select Dropdown</h3>
+      <div class="dropdown single-select" data-dropdown>
+        <button
+          class="dropdown-trigger"
+          aria-haspopup="true"
+          aria-expanded="false"
+          aria-controls="dropdown-list-1"
+          aria-label="Sélectionner une option"
+        >
+          Sélectionner une option
+        </button>
+        <ul
+          class="dropdown-menu hidden"
+          id="dropdown-list-1"
+          role="listbox"
+          aria-labelledby="dropdown-list-1"
+        >
+          <!-- Pour que le JS puisse gérer la sélection via aria-selected -->
+          <li role="option" data-value="option1" tabindex="0">Option 1</li>
+          <li role="option" data-value="option2" tabindex="0">Option 2</li>
+          <li role="option" data-value="option3" tabindex="0">Option 3</li>
+        </ul>
+      </div>
+    </div>
+  
+    <!-- Multi-Select Dropdown -->
+    <div>
+      <h3>Multi-Select Dropdown</h3>
+      <div class="dropdown multi-select" data-dropdown>
+        <button
+          class="dropdown-trigger"
+          aria-haspopup="true"
+          aria-expanded="false"
+          aria-label="Sélectionner des options"
+        >
+          Sélectionner des options
+        </button>
+        <ul
+          class="dropdown-menu hidden"
+          id="dropdown-list-2"
+          role="listbox"
+          aria-labelledby="dropdown-list-2"
+        >
+          <li role="option" data-value="option1" tabindex="0">
+            <input type="checkbox" id="multi-option1" />
+            <label for="multi-option1">Option 1</label>
+          </li>
+          <li role="option" data-value="option2" tabindex="0">
+            <input type="checkbox" id="multi-option2" />
+            <label for="multi-option2">Option 2</label>
+          </li>
+          <li role="option" data-value="option3" tabindex="0">
+            <input type="checkbox" id="multi-option3" />
+            <label for="multi-option3">Option 3</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+  
+    <!-- Dropdown avec sous-menus -->
+    <!-- Pour que la fonction refreshDropdownLabel() détecte ce cas,
+         on ajoute .has-submenu sur le conteneur "dropdown". -->
+    <div>
+      <h3>Dropdown avec Sous-Menus</h3>
+      <div class="dropdown has-submenu" data-dropdown>
+        <button
+          class="dropdown-trigger"
+          aria-haspopup="true"
+          aria-expanded="false"
+          aria-label="Ouvrir le menu avec sous-menus"
+        >
+          Dropdown avec Sous-Menus
+        </button>
+        <ul class="dropdown-menu hidden" role="listbox" aria-label="Menu avec sous-menus">
+          <!-- Chaque li.has-submenu contient un sous-menu -->
+          <li class="has-submenu">
+            <button
+              class="submenu-trigger"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-label="Ouvrir le sous-menu Catégorie 1"
+            >
+              Catégorie 1
+            </button>
+            <ul class="submenu hidden" role="listbox" aria-label="Sous-menu Catégorie 1">
+              <!-- Pour pouvoir « sélectionner » et afficher dans le label, on met role="option" -->
+              <li role="option" data-value="option1_1" tabindex="0">Option 1.1</li>
+              <li role="option" data-value="option1_2" tabindex="0">Option 1.2</li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <button
+              class="submenu-trigger"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-label="Ouvrir le sous-menu Catégorie 2"
+            >
+              Catégorie 2
+            </button>
+            <ul class="submenu hidden" role="listbox" aria-label="Sous-menu Catégorie 2">
+              <li role="option" data-value="option2_1" tabindex="0">Option 2.1</li>
+              <li role="option" data-value="option2_2" tabindex="0">Option 2.2</li>
+            </ul>
+          </li>
+          <!-- Éventuellement, un item simple (sans sous-menu) -->
+          <li role="option" data-value="option3" tabindex="0">Option 3</li>
+        </ul>
+      </div>
+    </div>
+  
+    <!-- Dropdown avec filtre -->
+    <!-- Pour que la fonction refreshDropdownLabel() détecte ce cas,
+         on ajoute .dropdown-filter sur le conteneur "dropdown". -->
+    <div>
+      <h3>Dropdown avec Filtre</h3>
+      <div class="dropdown dropdown-filter" data-dropdown>
+        <button
+          class="dropdown-trigger"
+          aria-haspopup="true"
+          aria-expanded="false"
+          aria-controls="dropdown-list-4"
+          aria-label="Sélectionner une option avec filtre"
+        >
+          Dropdown avec Filtre
+        </button>
+        <div
+          class="dropdown-menu hidden"
+          id="dropdown-list-4"
+          role="listbox"
+          aria-labelledby="dropdown-list-4"
+        >
+          <input
+            type="text"
+            class="dropdown-filter"
+            placeholder="Rechercher..."
+            aria-label="Filtrer les options"
+          />
+          <ul>
+            <!-- role="option" pour être cohérent avec l’extraction aria-selected -->
+            <li role="option" data-value="optionA" tabindex="0">Option A</li>
+            <li role="option" data-value="optionB" tabindex="0">Option B</li>
+            <li role="option" data-value="optionC" tabindex="0">Option C</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Dropdown multi-colonnes -->
+    <!-- Pour que la fonction refreshDropdownLabel() détecte ce cas,
+         on ajoute .multi-column sur le conteneur "dropdown". -->
+    <div>
+      <h3>Dropdown Multi-Colonnes</h3>
+      <div class="dropdown multi-column" data-dropdown>
+        <button
+          class="dropdown-trigger"
+          aria-haspopup="true"
+          aria-expanded="false"
+          aria-label="Ouvrir le dropdown multi-colonnes"
+        >
+          Dropdown Multi-Colonnes
+        </button>
+        <div class="dropdown-menu hidden multi-column" role="listbox" aria-label="Menu multi-colonnes">
+          <div class="column">
+            <ul>
+              <!-- role="option" pour sélectionner -->
+              <li role="option" data-value="option1" tabindex="0">Option 1</li>
+              <li role="option" data-value="option2" tabindex="0">Option 2</li>
+              <li role="option" data-value="option3" tabindex="0">Option 3</li>
+            </ul>
+          </div>
+          <div class="column">
+            <ul>
+              <li role="option" data-value="option4" tabindex="0">Option 4</li>
+              <li role="option" data-value="option5" tabindex="0">Option 5</li>
+              <li role="option" data-value="option6" tabindex="0">Option 6</li>
+            </ul>
+          </div>
+          <div class="column">
+            <ul>
+              <li role="option" data-value="option7" tabindex="0">Option 7</li>
+              <li role="option" data-value="option8" tabindex="0">Option 8</li>
+              <li role="option" data-value="option9" tabindex="0">Option 9</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
