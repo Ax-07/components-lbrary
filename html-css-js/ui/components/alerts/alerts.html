@@ -1,0 +1,16 @@
+<section id="alerts" class="section">
+    <h2>Alert</h2>
+    <p class="description">Les alertes permettent de demander à l'utilisateur de confirmer une action importante, comme une suppression ou une sauvegarde.</p>
+    <button id="show-alert" class="btn">Afficher une alerte</button>
+
+    <div id="alert-modal" class="alert-modal" role="alertdialog" aria-hidden="true" aria-labelledby="alert-title" aria-describedby="alert-description">
+        <div class="alert-modal-content" role="document" aria-modal="true" tabindex="-1">
+            <h3 id="alert-title">Confirmer l'action</h3>
+            <p id="alert-description">Êtes-vous sûr de vouloir effectuer cette action ?</p>
+            <div class="alert-modal-actions">
+                <button id="alert-confirm" class="btn btn-danger">Oui</button>
+                <button id="alert-cancel" class="btn btn-secondary">Non</button>
+            </div>
+        </div>
+    </div>
+</section>
