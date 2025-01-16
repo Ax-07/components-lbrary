@@ -1,0 +1,52 @@
+.tabs {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: flex; /* Pour aligner les boutons en ligne */
+}
+
+.tab-item {
+  padding: 1em;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  flex: 1;
+  text-align: center;
+  transition: background-color 0.3s ease-in-out;
+  background: #f9f9f9;
+  border: none; /* car c’est un bouton */
+  font: inherit; /* hérite de la police */
+}
+
+.tab-item:focus {
+  outline: none; /* Indicateur de focus au clavier */
+}
+
+.tab-item.active {
+  background: var(--background-color);
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.tab-item:hover {
+  background: var(--light-color);
+}
+
+/* Zone de contenu */
+.tab-content {
+  padding: 1em;
+  border: 1px solid #ddd;
+  border-top: none; /* pour éviter une double bordure avec l’onglet */
+  border-radius: 0 0 4px 4px;
+}
+
+/* Panneau inactif */
+.tab-pane {
+  display: block; /* ou inline-block, flex, etc., selon besoin */
+}
+.tab-pane:not(.active) {
+  display: none;
+}
+
+/* Ou si vous préférez utiliser [hidden] :
+.tab-pane[hidden] {
+  display: none;
+}
+*/
