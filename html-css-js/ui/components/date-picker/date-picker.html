@@ -1,0 +1,43 @@
+<section id="date-picker">
+    <h2>Date Picker</h2>
+    <p class="description">
+        Le Date Picker permet de sélectionner des dates rapidement et facilement, prenant en charge les plages de dates et les jours désactivés.
+    </p>
+    <div class="date-picker" role="application" aria-label="Sélectionneur de date">
+        <label for="start-date-input">Date de début</label>
+        <input 
+            type="text" 
+            id="start-date-input" 
+            placeholder="Date de début" 
+            readonly 
+            aria-label="Champ de date de début" 
+        />
+        <label for="end-date-input">Date de fin</label>
+        <input 
+            type="text" 
+            id="end-date-input" 
+            placeholder="Date de fin" 
+            readonly 
+            aria-label="Champ de date de fin" 
+        />
+        <div class="calendar hidden" id="calendar" aria-hidden="true">
+            <div class="calendar-header">
+                <button class="prev-month" aria-label="Mois précédent">&lt;</button>
+                <span class="month-year" id="month-year" aria-live="polite"></span>
+                <button class="next-month" aria-label="Mois suivant">&gt;</button>
+            </div>
+            <div class="calendar-days">
+                <div class="calendar-weekdays" aria-hidden="true">
+                    <span>Dim</span>
+                    <span>Lun</span>
+                    <span>Mar</span>
+                    <span>Mer</span>
+                    <span>Jeu</span>
+                    <span>Ven</span>
+                    <span>Sam</span>
+                </div>
+                <div class="calendar-dates" id="calendar-dates" role="grid"></div>
+            </div>
+        </div>
+    </div>
+</section>
