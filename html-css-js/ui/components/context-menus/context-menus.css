@@ -1,0 +1,73 @@
+/* Container Styles */
+.context-menu-container {
+    position: relative;
+    padding: 1em;
+    border: 1px dashed var(--primary-color);
+    text-align: center;
+    border-radius: 8px;
+    background: var(--background-color);
+}
+
+.menu-target {
+    display: inline-block;
+    padding: 0.5em 1em;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* Menu Styles */
+.context-menu {
+    position: absolute;
+    background: var(--white-color);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0.5em 0;
+    z-index: 1000;
+    width: 200px;
+}
+
+/* Menu Item Styles */
+.context-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.context-menu li {
+    display: flex;
+    align-items: center;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.context-menu li:hover {
+    background: var(--light-color);
+}
+
+.menu-item {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+.menu-item:focus {
+    outline: 2px solid var(--primary-color);
+}
+
+/* Icon Styles */
+.icon-copy:before { content: "📋"; }
+.icon-paste:before { content: "📄"; }
+.icon-delete:before { content: "🗑️"; }
+.icon-rename:before { content: "✏️"; }
+.icon-download:before { content: "⬇️"; }
