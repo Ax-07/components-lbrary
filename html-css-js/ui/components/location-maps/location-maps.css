@@ -1,0 +1,53 @@
+/* Zone de recherche */
+.search-section {
+    background: #f9f9f9;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px var(--shadow-color);
+    margin-bottom: 2em;
+  }
+  .search-label {
+    margin-right: 0.5em;
+    font-weight: bold;
+    color: var(--text-secondary-color);
+  }
+  .search-section input[type="text"] {
+    width: 60%;
+    padding: 0.5em;
+    border-radius: 4px;
+    border: 1px solid var(--text-secondary-color);
+    margin-right: 0.5em;
+  }
+  .search-section button {
+    padding: 0.5em 1em;
+    background: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    vertical-align: middle;
+  }
+  .search-section button:hover {
+    background: var(--primary-hover-color);
+  }
+  .feedback {
+    margin-top: 0.5em;
+    font-size: 0.9rem;
+    color: #777;
+    min-height: 1.2em;
+  }
+  
+  /* Conteneur de la carte */
+  .map-container {
+    margin-bottom: 2em;
+  }
+  .map-container h2 {
+    margin-bottom: 0.5em;
+  }
+  .google-map-iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }

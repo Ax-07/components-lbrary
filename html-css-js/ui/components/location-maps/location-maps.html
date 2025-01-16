@@ -1,0 +1,33 @@
+<section id="location-maps" class="section">
+    <h2>Localisation - Google Maps</h2>
+    <p class="description">
+      Saisissez une adresse ou un lieu, puis cliquez sur "Rechercher" pour afficher
+      le résultat sur Google Maps (iframe).
+    </p>
+
+    <div class="search-section" aria-label="Recherche de localisation sur Google Maps">
+        <label for="address-input" class="search-label">Adresse :</label>
+        <input
+          type="text"
+          id="address-input"
+          placeholder="Ex. Tour Eiffel, Paris"
+          value="Champs Élysées, Paris"
+          aria-label="Champ de recherche de lieu"
+        />
+        <button id="search-btn" aria-label="Rechercher cette adresse sur la carte">Rechercher</button>
+        <div class="feedback" id="feedback" aria-live="polite"></div>
+      </div>
+    
+      <section class="map-container" aria-labelledby="map-section-title">
+        <h2 id="map-section-title">Carte Google Maps</h2>
+        <iframe
+          id="google-map-iframe"
+          class="google-map-iframe"
+          src="https://www.google.com/maps?q=Champs%20Élysées,%20Paris&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          aria-label="Carte Google Maps affichant le lieu recherché"
+          allowfullscreen
+        ></iframe>
+      </section>
+  </section>
