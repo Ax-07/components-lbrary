@@ -1,0 +1,34 @@
+.badge {
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    padding: 0.5em 1em;
+    border-radius: 12px;
+    font-size: 0.875em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0.5em 0.5em 0 0;
+    color: var(--white-color);
+    gap: 0.5em;
+}
+
+.badge i {
+    font-size: 1.2em;
+}
+
+.badge-primary {
+    background: var(--info-color);
+}
+
+.badge-warning {
+    background: var(--warning-color);
+    color: var(--text-color);
+}
+
+.badge-danger {
+    background: var(--danger-color);
+}
+
+.badge-success {
+    background: var(--success-color);
+}
