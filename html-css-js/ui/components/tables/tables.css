@@ -1,0 +1,57 @@
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+
+/* Caption stylé (optionnel) */
+caption {
+  caption-side: top;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  color: #333;
+}
+
+/* En-têtes de table */
+th, td {
+  border: 1px solid #ddd;
+  padding: 0.5em;
+  text-align: left;
+}
+th {
+  background: var(--light-color);
+  cursor: pointer; /* Indique qu’on peut cliquer si 'sortable' */
+}
+
+/* Lignes zébrées */
+tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+/* Survol de la ligne */
+tbody tr:hover {
+  background-color: #eee;
+}
+
+/* Indication visuelle de tri */
+th.sortable::after {
+  content: " ▼"; /* icône par défaut */
+  opacity: 0.3;  /* icône discrète */
+  margin-left: 0.3em;
+}
+
+/* Quand tri ascendant */
+th[aria-sort="ascending"]::after {
+  content: " ▲";
+  opacity: 0.8;
+  color: var(--primary-color);
+}
+
+/* Quand tri descendant */
+th[aria-sort="descending"]::after {
+  content: " ▼";
+  opacity: 0.8;
+  color: var(--primary-color);
+}
