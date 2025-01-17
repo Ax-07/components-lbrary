@@ -1,0 +1,117 @@
+/* Layout de base : grid */
+.card-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+    margin: 2em 0;
+  }
+  
+  /* Style général des cards */
+  .card {
+    background-color: var(--white-color);
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 2px 4px var(--shadow-color);
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 100%;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px var(--shadow-color);
+  }
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 0.5em;
+  }
+  .card h4 {
+    margin-bottom: 0.5em;
+    color: var(--primary-color);
+  }
+  .btn-readmore {
+    display: inline-block;
+    margin-top: 0.5em;
+    background: var(--primary-color);
+    color: var(--white-color);
+    padding: 0.4em 0.8em;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+  .btn-buy {
+    background: var(--primary-color);
+    border: none;
+    color: var(--white-color);
+    padding: 0.4em 0.8em;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .btn-buy:hover {
+    background: #0056b3;
+  }
+  
+  /* Variation BLOG */
+  .card-blog .card {
+    /* rien de spécial en plus, ou un style blog ? */
+  }
+  
+  /* Variation ECOM */
+  .card-ecom .product-card .price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin: 0.5em 0;
+  }
+  
+  /* Variation TEAM */
+  .card-team .team-card img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 0.5em;
+  }
+  .card-team .team-card .role {
+    font-weight: bold;
+    color: #666;
+  }
+  
+  /* Variation PORTFOLIO */
+/* Variante Portfolio avec figure */
+.card-portfolio .portfolio-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--white-color);
+    padding: 16px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 4px var(--shadow-color);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card-portfolio .portfolio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px var(--shadow-color);
+  }
+  
+  .card-portfolio .portfolio-card img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    margin-bottom: 0.5em;
+  }
+  
+  .card-portfolio .portfolio-card figcaption {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .card-layout {
+      grid-template-columns: 1fr;
+    }
+    .card img {
+      width: 100%;
+    }
+  }
