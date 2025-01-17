@@ -1,0 +1,24 @@
+.footer-layout {
+    background: var(--dark-color);
+    color: var(--white-color);
+    padding: 1em;
+    text-align: center;
+}
+.footer-layout ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1em 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+.footer-layout ul li {
+    display: inline;
+}
+.footer-layout ul li a {
+    color: var(--white-color);
+    text-decoration: none;
+}
+.footer-layout ul li a:hover {
+    text-decoration: underline;
+}
