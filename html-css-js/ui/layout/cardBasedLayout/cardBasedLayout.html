@@ -1,0 +1,96 @@
+<section id="cardBasedLayout" class="section" aria-label="Variations de Card-Based Layout">
+    <h2>Card-Based Layout - Variations</h2>
+    <p class="description">
+      Le layout "Card-Based" organise les contenus sous forme de cartes, idéal pour présenter des informations
+      concises et visuelles. Voici plusieurs exemples selon différents contextes (blog, e-commerce, équipe, portfolio).
+    </p>
+  
+    <!-- 1) Variante Blog Articles -->
+    <article class="card-layout-variation" aria-labelledby="card-blog-title">
+      <h3 id="card-blog-title">Variante 1 : Blog Articles</h3>
+      <p>Pour présenter des articles de blog (image, titre, résumé, lien “Lire plus”).</p>
+      <div class="card-layout card-blog">
+        <!-- Carte Article 1 -->
+        <div class="card blog-card">
+          <img src="https://placehold.co/300x200" alt="Aperçu Article 1" loading="lazy"/>
+          <h4>Article 1</h4>
+          <p>Un court résumé de l’article en question.</p>
+          <a href="#" class="btn-readmore" aria-label="Lire l'article Article 1">Lire plus</a>
+        </div>
+        <!-- Carte Article 2 -->
+        <div class="card blog-card">
+          <img src="https://placehold.co/300x200" alt="Aperçu Article 2" loading="lazy"/>
+          <h4>Article 2</h4>
+          <p>Un court résumé pour donner envie de lire.</p>
+          <a href="#" class="btn-readmore">Lire plus</a>
+        </div>
+      </div>
+    </article>
+  
+    <!-- 2) Variante E-commerce Produits -->
+    <article class="card-layout-variation" aria-labelledby="card-ecom-title">
+      <h3 id="card-ecom-title">Variante 2 : E-commerce</h3>
+      <p>Pour afficher des produits avec leur prix, image, nom et un bouton d’achat.</p>
+      <div class="card-layout card-ecom">
+        <!-- Carte Produit 1 -->
+        <div class="card product-card">
+          <img src="https://placehold.co/200x200" alt="Produit 1" loading="lazy"/>
+          <h4>Produit 1</h4>
+          <p class="price">$19.99</p>
+          <button class="btn-buy">Acheter</button>
+        </div>
+        <!-- Carte Produit 2 -->
+        <div class="card product-card">
+          <img src="https://placehold.co/200x200" alt="Produit 2" loading="lazy"/>
+          <h4>Produit 2</h4>
+          <p class="price">$29.99</p>
+          <button class="btn-buy">Acheter</button>
+        </div>
+      </div>
+    </article>
+  
+    <!-- 3) Variante Equipe (Team) -->
+    <article class="card-layout-variation" aria-labelledby="card-team-title">
+      <h3 id="card-team-title">Variante 3 : Équipe</h3>
+      <p>Pour mettre en avant les membres d’une équipe, leur rôle, leur photo.</p>
+      <div class="card-layout card-team">
+        <div class="card team-card">
+          <img src="https://placehold.co/150x150" alt="John Doe - CEO" loading="lazy"/>
+          <h4>John Doe</h4>
+          <p class="role">CEO & Founder</p>
+          <p class="bio">Passionné par l’innovation et la croissance.</p>
+        </div>
+        <div class="card team-card">
+          <img src="https://placehold.co/150x150" alt="Jane Smith - CTO" loading="lazy"/>
+          <h4>Jane Smith</h4>
+          <p class="role">CTO</p>
+          <p class="bio">Experte en développement et infrastructure.</p>
+        </div>
+      </div>
+    </article>
+  
+    <!-- 4) Variante Portfolio Minimal -->
+    <article class="card-layout-variation" aria-labelledby="card-portfolio-figure-title">
+        <h3 id="card-portfolio-figure-title">Variante 4 : Portfolio avec `<figure>`</h3>
+        <p>Pour un portfolio d’images (projets, créations), en utilisant des balises sémantiques pour améliorer le SEO et l'accessibilité.</p>
+        <div class="card-layout card-portfolio">
+          <figure class="portfolio-card">
+            <img src="https://placehold.co/300x300" alt="Projet 1 - Design Web" loading="lazy"/>
+            <figcaption>Projet 1 : Design Web</figcaption>
+          </figure>
+          <figure class="portfolio-card">
+            <img src="https://placehold.co/300x300" alt="Projet 2 - Illustration" loading="lazy"/>
+            <figcaption>Projet 2 : Illustration</figcaption>
+          </figure>
+          <figure class="portfolio-card">
+            <img src="https://placehold.co/300x300" alt="Projet 3 - Branding" loading="lazy"/>
+            <figcaption>Projet 3 : Branding</figcaption>
+          </figure>
+          <figure class="portfolio-card">
+            <img src="https://placehold.co/300x300" alt="Projet 4 - Photographie" loading="lazy"/>
+            <figcaption>Projet 4 : Photographie</figcaption>
+          </figure>
+        </div>
+      </article>
+  </section>
+  
