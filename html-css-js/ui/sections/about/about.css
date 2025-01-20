@@ -1,0 +1,120 @@
+.about-variation {
+    box-shadow: 0 4px 8px var(--shadow-color);
+    padding: 1em;
+}
+/* CONTENU GÉNÉRIQUE ABOUT */
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    margin: 2em 0;
+  }
+  .about-figure {
+    margin: 0;
+    text-align: center;
+  }
+  .about-image {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .about-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px var(--shadow-color);
+  }
+  .about-text {
+    max-width: 600px;
+  }
+  .about-figcaption {
+    margin-top: 0.5em;
+    font-size: 0.85rem;
+    color: #777;
+  }
+  
+  /* Layout inversé */
+  .about-content.reversed {
+    flex-direction: row-reverse;
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+      text-align: center;
+    }
+    .about-content.reversed {
+      flex-direction: column-reverse;
+    }
+  }
+  
+  /* VARIANTE HERO */
+  .hero-about {
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+    background: url("https://placehold.co/1200x400") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-top: 1em;
+    border-radius: 8px;
+  }
+  .hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2em;
+    text-align: center;
+    max-width: 600px;
+    border-radius: 8px;
+  }
+  .hero-overlay h4 {
+    margin-bottom: 0.5em;
+    font-size: 1.4rem;
+  }
+  .hero-overlay p {
+    margin: 0;
+    line-height: 1.5;
+  }
+  
+  /* VARIANTE CARDS (Grille) */
+  .about-cards-grid {
+    display: grid;
+    gap: 1.5em;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin: 2em 0;
+  }
+  .about-card {
+    background: var(--white-color);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1em;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+  }
+  .about-card:hover {
+    box-shadow: 0 6px 12px var(--shadow-color);
+  }
+  .about-card-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1em;
+  }
+  .about-card h4 {
+    margin-bottom: 0.3em;
+    font-size: 1.2rem;
+  }
+  .about-card .role {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    color: var(--primary-color);
+  }
+  .about-card .bio {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin: 0;
+  }
