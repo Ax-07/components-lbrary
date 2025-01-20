@@ -1,0 +1,14 @@
+.split-screen {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.split-left,
+.split-right {
+    flex: 1;
+    min-width: 300px;
+    padding: 16px;
+    background-color: var(--light-color);
+    box-shadow: 0 2px 4px var(--shadow-color);
+}
