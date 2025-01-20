@@ -1,0 +1,34 @@
+/* Sidenav */
+.sidenav {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: var(--primary-color);
+    padding-top: 20px;
+    overflow-y: auto;
+    box-shadow: 2px 0 5px var(--shadow-color);
+    border-right: 1px solid var(--secondary-color);
+}
+.sidenav ul {
+    list-style-type: none;
+    padding: 0;
+}
+.sidenav ul li {
+    padding: 0.5em;
+    text-align: left;
+}
+.sidenav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    display: block;
+}
+.sidenav ul li:hover {
+    background: var(--primary-hover-color);
+    color: var(--white-color);
+}
+
+.main {
+    margin-left: 250px;
+}
