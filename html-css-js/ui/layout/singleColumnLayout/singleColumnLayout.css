@@ -1,0 +1,11 @@
+.single-column-layout {
+    margin: 2em 0;
+}
+.single-column-layout .column-item {
+    background: var(--background-color);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0 4px 8px var(--shadow-color);
+}
