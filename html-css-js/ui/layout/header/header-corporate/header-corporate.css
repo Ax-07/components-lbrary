@@ -1,0 +1,113 @@
+:root {
+    --primary-color: #2c3e50; /* Dark Blue */
+    --secondary-color: #ecf0f1; /* Light Grey */
+    --text-color: #ffffff; /* White */
+    --accent-color: #3498db; /* Blue */
+    --hover-color: #2980b9; /* Darker Blue */
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --border-radius: 4px;
+    --transition-speed: 0.3s;
+  }
+  
+  .section {
+    margin: 0;
+  }
+  
+  .corporate-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--primary-color);
+    color: var(--text-color);
+    padding: 1em 0;
+    box-shadow: 0 4px 6px var(--shadow-color);
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+  }
+  
+  .logo img {
+    max-height: 50px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color var(--transition-speed);
+  }
+  
+  nav ul li a:hover,
+  nav ul li a:focus,
+  nav ul li a.active {
+    color: var(--accent-color);
+    text-decoration: underline;
+  }
+  
+  .header-actions {
+    display: flex;
+    gap: 0.5em;
+  }
+  
+  .btn {
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+  }
+  
+  .btn-primary {
+    background: var(--accent-color);
+    color: var(--text-color);
+  }
+  
+  .btn-primary:hover,
+  .btn-primary:focus {
+    background: var(--hover-color);
+  }
+  
+  .btn-secondary {
+    background: transparent;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+  }
+  
+  .btn-secondary:hover,
+  .btn-secondary:focus {
+    background: var(--text-color);
+    color: var(--primary-color);
+  }
+  
+  @media (max-width: 768px) {
+    .header-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    nav ul {
+      flex-direction: column;
+      gap: 0.5em;
+    }
+    
+    .header-actions {
+      margin-top: 0.5em;
+    }
+  }
+  
