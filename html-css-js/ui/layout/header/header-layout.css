@@ -1,0 +1,24 @@
+.header-layout {
+    background: var(--primary-color);
+    color: var(--white-color);
+    padding: 1em;
+    text-align: center;
+}
+.header-layout nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+.header-layout nav ul li {
+    display: inline;
+}
+.header-layout nav ul li a {
+    color: var(--white-color);
+    text-decoration: none;
+}
+.header-layout nav ul li a:hover {
+    text-decoration: underline;
+}
