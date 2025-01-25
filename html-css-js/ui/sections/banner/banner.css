@@ -1,0 +1,167 @@
+/* HEADER GLOBAL DE VARIATIONS */
+#banner-variations h2 {
+  margin-bottom: 0.5em;
+}
+#banner-variations .description {
+  margin-bottom: 1.5em;
+  color: #555;
+}
+
+.banner-variation {
+  margin-bottom: 3em;
+}
+
+/* 1) Bannière Classique */
+.banner-classic {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.banner-classic img {
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+.banner-classic img:hover {
+  transform: scale(1.05);
+}
+.banner-classic .banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0,0,0,0.7);
+  padding: 1em;
+  border-radius: 8px;
+  max-width: 80%;
+}
+
+/* 2) Hero Banner */
+.banner-hero {
+  position: relative;
+  width: 100%;
+  height: 80vh; /* ou 100vh selon le besoin */
+  min-height: 400px;
+  background: url("https://placehold.co/1920x1080") center/cover no-repeat;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.banner-hero::before {
+  /* Overlay sombre */
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 1;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+  max-width: 600px;
+}
+.btn-hero {
+  margin-top: 1em;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.8em 1.2em;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.btn-hero:hover {
+  background: #0056b3;
+}
+
+/* 3) Bannière Minimaliste */
+.banner-minimal {
+  background-color: #ff9800;
+  border-radius: 8px;
+  text-align: center;
+  color: #fff;
+  padding: 2em;
+}
+.banner-minimal-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* 4) Carousel */
+.banner-carousel {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  max-width: 1200px;
+  margin: 2em auto;
+  border-radius: 8px;
+}
+.banner-slide {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner-slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+.banner-slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.banner-slide .banner-content {
+  position: absolute;
+  color: #fff;
+  background: rgba(0,0,0,0.5);
+  padding: 1em;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 50%;
+}
+/* Boutons du carousel */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  width: 2em;
+  height: 2em;
+  font-size: 1.5em;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+}
+.prev-btn { left: 1em; }
+.next-btn { right: 1em; }
+.carousel-btn:hover {
+  background: rgba(0,0,0,0.7);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .banner-hero {
+    height: 60vh;
+    min-height: 300px;
+  }
+  .banner-hero::before {
+    background: rgba(0,0,0,0.4);
+  }
+  .btn-hero {
+    font-size: 0.9rem;
+  }
+}
