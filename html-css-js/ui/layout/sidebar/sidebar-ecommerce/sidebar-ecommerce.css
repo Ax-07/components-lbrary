@@ -1,0 +1,116 @@
+:root {
+    --primary-color: #27ae60; /* Green */
+    --light-color: #ecf0f1; /* Light Grey */
+    --text-color: #2c3e50; /* Dark Grey */
+    --hover-color: #2ecc71; /* Light Green */
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --border-radius: 4px;
+    --transition-speed: 0.3s;
+  }
+  
+  .section {
+    display: flex;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  .ecommerce-sidebar {
+    background: var(--light-color);
+    color: var(--text-color);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 1em;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-y: auto;
+  }
+  
+  .sidebar-search {
+    margin-bottom: 1em;
+  }
+  
+  .sidebar-search input[type="search"] {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+  }
+  
+  .ecommerce-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1em 0;
+  }
+  
+  .ecommerce-sidebar ul li {
+    padding: 0.5em 0;
+  }
+  
+  .ecommerce-sidebar ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    display: block;
+    padding: 0.5em 1em;
+    border-radius: var(--border-radius);
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .ecommerce-sidebar ul li a:hover,
+  .ecommerce-sidebar ul li a:focus,
+  .ecommerce-sidebar ul li a.active {
+    background: var(--hover-color);
+    color: #ffffff;
+  }
+  
+  .sidebar-filter {
+    margin-top: 2em;
+  }
+  
+  .sidebar-filter h4 {
+    margin-bottom: 0.5em;
+    color: var(--primary-color);
+  }
+  
+  .sidebar-filter input[type="range"] {
+    width: 100%;
+  }
+  
+  #price-value {
+    display: block;
+    text-align: right;
+    margin-top: 0.5em;
+    color: var(--primary-color);
+    font-weight: bold;
+  }
+  
+  .sidebar-layout-content {
+    margin-left: 270px; /* Sidebar width + some gap */
+    padding: 2em;
+    background: var(--primary-color);
+    color: #ffffff;
+    flex: 1;
+  }
+  
+  @media (max-width: 768px) {
+    .section {
+      flex-direction: column;
+    }
+    
+    .ecommerce-sidebar {
+      position: relative;
+      width: 100%;
+      height: auto;
+      margin-bottom: 1em;
+    }
+    
+    .sidebar-layout-content {
+      margin-left: 0;
+      background: var(--light-color);
+      color: var(--text-color);
+    }
+  }
+  
