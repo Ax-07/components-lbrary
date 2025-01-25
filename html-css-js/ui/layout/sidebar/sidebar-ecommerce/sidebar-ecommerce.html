@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Sidebar E-commerce</title>
+  <link rel="stylesheet" href="sidebar-ecommerce.css">
+</head>
+<body>
+
+<section id="sidebar-ecommerce" class="section">
+    <aside id="sidebar-layout" class="sidebar-layout ecommerce-sidebar" aria-label="Navigation E-commerce">
+        <div class="sidebar-search">
+            <label for="search-products" class="visually-hidden">Rechercher des produits</label>
+            <input type="search" id="search-products" placeholder="Rechercher..." aria-label="Rechercher des produits">
+        </div>
+        <ul>
+            <li><a href="#all-products" class="active">Tous les Produits</a></li>
+            <li><a href="#categories">Catégories</a></li>
+            <li><a href="#offers">Promotions</a></li>
+            <li><a href="#new-arrivals">Nouveautés</a></li>
+            <li><a href="#best-sellers">Meilleures Ventes</a></li>
+        </ul>
+        <div class="sidebar-filter">
+            <h4>Filtrer par Prix</h4>
+            <input type="range" min="0" max="1000" value="500" id="price-range" aria-label="Filtrer par prix">
+            <span id="price-value">500 €</span>
+        </div>
+    </aside>
+    <div id="sidebar-layout-content" class="sidebar-layout-content">
+        <h1>Bienvenue dans notre Boutique</h1>
+        <p>Découvrez nos produits exclusifs et profitez de nos promotions.</p>
+    </div>
+</section>
+
+<script>
+  // Script pour afficher la valeur du range input
+  document.addEventListener('DOMContentLoaded', () => {
+    const priceRange = document.getElementById('price-range');
+    const priceValue = document.getElementById('price-value');
+
+    priceRange.addEventListener('input', () => {
+      priceValue.textContent = `${priceRange.value} €`;
+    });
+  });
+</script>
+
+</body>
+</html>
