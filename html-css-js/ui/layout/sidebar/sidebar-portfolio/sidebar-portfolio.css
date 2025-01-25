@@ -1,0 +1,120 @@
+:root {
+    --primary-color: #e67e22; /* Orange */
+    --light-color: #ecf0f1; /* Light Grey */
+    --text-color: #2c3e50; /* Dark Grey */
+    --hover-color: #d35400; /* Darker Orange */
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --border-radius: 4px;
+    --transition-speed: 0.3s;
+  }
+  
+  .section {
+    display: flex;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  .portfolio-sidebar {
+    background: var(--light-color);
+    color: var(--text-color);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 1em;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-y: auto;
+  }
+  
+  .sidebar-search {
+    margin-bottom: 1em;
+  }
+  
+  .sidebar-search input[type="search"] {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+  }
+  
+  .portfolio-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1em 0;
+  }
+  
+  .portfolio-sidebar ul li {
+    padding: 0.5em 0;
+  }
+  
+  .portfolio-sidebar ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    display: block;
+    padding: 0.5em 1em;
+    border-radius: var(--border-radius);
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .portfolio-sidebar ul li a:hover,
+  .portfolio-sidebar ul li a:focus,
+  .portfolio-sidebar ul li a.active {
+    background: var(--hover-color);
+    color: #ffffff;
+  }
+  
+  .sidebar-social {
+    margin-top: 2em;
+  }
+  
+  .sidebar-social h4 {
+    margin-bottom: 0.5em;
+    color: var(--primary-color);
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 0.5em;
+  }
+  
+  .social-icons a img {
+    width: 24px;
+    height: 24px;
+    transition: transform var(--transition-speed);
+  }
+  
+  .social-icons a:hover img,
+  .social-icons a:focus img {
+    transform: scale(1.1);
+  }
+  
+  .sidebar-layout-content {
+    margin-left: 270px; /* Sidebar width + some gap */
+    padding: 2em;
+    background: var(--light-color);
+    color: var(--text-color);
+    flex: 1;
+  }
+  
+  @media (max-width: 768px) {
+    .section {
+      flex-direction: column;
+    }
+    
+    .portfolio-sidebar {
+      position: relative;
+      width: 100%;
+      height: auto;
+      margin-bottom: 1em;
+    }
+    
+    .sidebar-layout-content {
+      margin-left: 0;
+      background: var(--primary-color);
+      color: #ffffff;
+    }
+  }
+  
