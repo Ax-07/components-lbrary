@@ -1,0 +1,115 @@
+/* Conteneur principal pour chaque feature */
+.feature {
+    display: flex;
+    align-items: center;
+    background: var(--background-color);
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    margin-bottom: 2em;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  .feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px var(--shadow-color);
+  }
+  
+  /* Image standard */
+  .feature-image {
+    border-radius: 8px;
+    margin-right: 1.5em;
+    width: 150px;
+    height: auto;
+  }
+  
+  /* Conteneur texte */
+  .feature-content {
+    max-width: 600px;
+  }
+  
+  .feature-content h4 {
+    margin-bottom: 0.5em;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+  }
+  
+  /* 1) Feature Classique */
+  .feature-classic {
+    /* image à gauche, texte à droite (défaut) */
+  }
+  
+  /* 2) Feature Inversée */
+  .feature-reversed {
+    flex-direction: row-reverse;
+  }
+  .feature-reversed .feature-image {
+    margin-left: 1.5em;
+    margin-right: 0;
+  }
+  
+  /* 3) Feature Icône */
+  .feature-icon .icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.5em;
+  }
+  .feature-icon-image {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+  }
+  
+  /* 4) Feature Statistique */
+  .feature-stats {
+    justify-content: space-between;
+  }
+  
+  .stats-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    border-radius: 8px;
+    padding: 1em;
+    min-width: 120px;
+    box-shadow: 0 2px 4px var(--shadow-color);
+  }
+  
+  .stat-number {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 0.2em;
+  }
+  
+  .stat-label {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .feature {
+      flex-direction: column;
+      text-align: center;
+    }
+    .feature-image,
+    .feature-icon-image {
+      margin: 0 0 1em 0;
+    }
+    .feature-reversed {
+      flex-direction: column;
+    }
+    .feature-reversed .feature-image {
+      margin-left: 0;
+    }
+    .feature-stats {
+      flex-direction: column;
+      align-items: center;
+    }
+    .stats-wrapper {
+      margin-top: 1em;
+    }
+  }
