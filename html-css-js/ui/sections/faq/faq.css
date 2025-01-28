@@ -1,0 +1,95 @@
+/* VARIANTE 1 : Liste simple */
+.faq-list .faq-item {
+  margin-bottom: 1em;
+}
+.faq-list h4 {
+  margin: 0.3em 0;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* VARIANTE 2 : Accordéon (pure CSS) */
+.faq-accordion {
+  max-width: 600px;
+  margin: 1em auto;
+}
+.faq-item {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 1em;
+  overflow: hidden;
+}
+.faq-item label.faq-question {
+  display: block;
+  background: var(--white-color);
+  padding: 0.8em;
+  cursor: pointer;
+  color: var(--primary-color);
+}
+.faq-item .faq-answer {
+  padding: 0.8em;
+  background: #f9f9f9;
+}
+.faq-item input[type="checkbox"]:checked ~ .faq-answer {
+  /* si coché, on affiche l’answer */
+  display: block;
+}
+.faq-answer {
+  display: none;
+}
+
+/* VARIANTE 3 : Accordéon JS */
+.faq-accordion-js {
+  max-width: 600px;
+  margin: 1em auto;
+}
+.faq-item-js {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 1em;
+}
+.faq-question-js {
+  width: 100%;
+  text-align: left;
+  background: var(--white-color);
+  border: none;
+  padding: 0.8em;
+  cursor: pointer;
+  color: var(--primary-color);
+  font-size: 1rem;
+}
+.faq-answer-js {
+  padding: 0.8em;
+  background: #f9f9f9;
+  transition: all 0.3s ease;
+}
+.faq-answer-js[hidden] {
+  display: none;
+}
+
+/* VARIANTE 4 : Minimaliste */
+.faq-minimal {
+  list-style: none;
+  padding: 0;
+  margin: 1em auto;
+  max-width: 600px;
+}
+.faq-minimal li {
+  margin-bottom: 1em;
+}
+.faq-q {
+  color: var(--primary-color);
+  font-weight: bold;
+  margin-right: 0.5em;
+}
+.faq-a {
+  color: #555;
+  margin-right: 0.5em;
+}
+
+/* (Optionnel) Animation sur l’ouverture de la réponse */
+.faq-answer,
+.faq-answer-js {
+  /* Ex.: vous pourriez ajouter un fade-in ou un max-height
+       pour animer l’ouverture, si vous le souhaitez. */
+}
