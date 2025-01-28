@@ -1,0 +1,83 @@
+<section id="faq-variations" class="section" aria-label="Variations de FAQ">
+    <h2>FAQ - Variations</h2>
+    <p class="description">
+      Plusieurs styles d’affichage pour une Foire aux Questions, afin de répondre aux interrogations fréquentes
+      de vos utilisateurs.
+    </p>
+  
+    <!-- VARIANTE 1 : Liste simple de questions/réponses -->
+    <article class="faq-variation" aria-labelledby="faq-list-title">
+      <h3 id="faq-list-title">Variante 1 : Liste simple (Q/R)</h3>
+      <div class="faq-list">
+        <div class="faq-item">
+          <h4>Q : Comment créer un compte ?</h4>
+          <p>A : Il suffit de cliquer sur “S’inscrire”, puis de renseigner vos informations.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Q : Comment réinitialiser mon mot de passe ?</h4>
+          <p>A : Cliquez sur “Mot de passe oublié ?” et suivez les instructions.</p>
+        </div>
+      </div>
+    </article>
+  
+    <!-- VARIANTE 2 : Accordéon CSS -->
+    <article class="faq-variation" aria-labelledby="faq-accordion-title">
+      <h3 id="faq-accordion-title">Variante 2 : Accordéon (CSS / sans JS)</h3>
+      <div class="faq-accordion">
+        <div class="faq-item">
+          <input type="checkbox" id="faq-ac-1" hidden>
+          <label for="faq-ac-1" class="faq-question">Comment souscrire à un plan ?</label>
+          <div class="faq-answer">
+            <p>Vous pouvez choisir un plan dans la page “Pricing”, puis suivre les étapes de paiement.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <input type="checkbox" id="faq-ac-2" hidden>
+          <label for="faq-ac-2" class="faq-question">Quelles méthodes de paiement acceptez-vous ?</label>
+          <div class="faq-answer">
+            <p>Carte bancaire, PayPal, et virement. D’autres options sont possibles selon votre pays.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+  
+    <!-- VARIANTE 3 : Accordéon JavaScript (boutons + aria-expanded) -->
+    <article class="faq-variation" aria-labelledby="faq-accordion-js-title">
+      <h3 id="faq-accordion-js-title">Variante 3 : Accordéon JavaScript</h3>
+      <div class="faq-accordion-js">
+        <div class="faq-item-js">
+          <button class="faq-question-js" aria-expanded="false" aria-controls="answer-js-1">
+            Comment modifier mes informations ?
+          </button>
+          <div id="answer-js-1" class="faq-answer-js" hidden>
+            <p>Allez dans votre profil, puis cliquez sur “Modifier mes infos” pour mettre à jour vos données.</p>
+          </div>
+        </div>
+        <div class="faq-item-js">
+          <button class="faq-question-js" aria-expanded="false" aria-controls="answer-js-2">
+            Quelle est la politique de remboursement ?
+          </button>
+          <div id="answer-js-2" class="faq-answer-js" hidden>
+            <p>Nous offrons un remboursement complet sous 30 jours, si vous n’êtes pas satisfait.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+  
+    <!-- VARIANTE 4 : Minimaliste -->
+    <article class="faq-variation" aria-labelledby="faq-minimal-title">
+      <h3 id="faq-minimal-title">Variante 4 : Minimaliste (liste Q/R concise)</h3>
+      <ul class="faq-minimal">
+        <li>
+          <span class="faq-q">Q :</span> Puis-je annuler à tout moment ?
+          <br />
+          <span class="faq-a">A :</span> Oui, vous pouvez annuler sans frais de résiliation.
+        </li>
+        <li>
+          <span class="faq-q">Q :</span> Y a-t-il un support 24h/24 ?
+          <br />
+          <span class="faq-a">A :</span> Notre support répond sous 24h, 7j/7.
+        </li>
+      </ul>
+    </article>
+  </section>
